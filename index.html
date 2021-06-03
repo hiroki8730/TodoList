@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoリスト</title>
+</head>
+
+<body>
+
+    <h1 class="todo-list">ToDoリスト</h1>
+
+    <div>
+        <form id="check">
+            <input type="radio" name="status" value="all" checked = "checked">全て
+            <input type="radio" name="status" value="active">作業中
+            <input type="radio" name="status" value="complete">完了
+        </form>
+    </div>
+    <p id="test"></p>
+   
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>コメント</th>
+                <th>状態</th>
+            </tr>
+        </thead>
+        <tbody id="todo-list">
+            
+        </tbody>
+    </table>
+    <p class="title">新規タスクの追加</p>
+    <div class="task-container">
+        <p><input type="text" id="task" class="texts" placeholder="タスクを入力してください"></p>
+        <p><input id="add-button" type="button" value="追加"></p>
+    </div>
+
+    <script src="index2.js"></script>
+
+</body>
+
+<style>
+    .todo-list {
+        text-align: center;
+
+    }
+
+    .task-container {
+        background-color: skyblue;
+    }
+
+    .title {
+        background-color: slategray;
+    }
+
+    #text {
+        background-color: tomato;
+    }
+</style>
+
+</html>
